@@ -1,5 +1,7 @@
 FROM fluent/fluentd:v0.12-onbuild
 
+ENV LOGZ_TYPE=simple
+
 USER root
 
 RUN apk add --update --virtual .build-deps \
